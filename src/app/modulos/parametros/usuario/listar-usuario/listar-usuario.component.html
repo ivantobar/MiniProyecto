@@ -1,0 +1,31 @@
+<br />
+<a routerLink="/parametros/usuario-agregar" class="btn">Agregar Usuario</a>
+<br />
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>Identificación</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Perfil</th>
+      <th>Password</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of listaRegistros">
+      <td>{{ usuario.identificacion }}</td>
+      <td>{{ usuario.nombres }}</td>
+      <td>{{ usuario.apellidos }}</td>
+      <td>{{ usuario.perfil }}</td>
+      <td>{{ usuario.password }}</td>
+      <td>
+        <a routerLink="/parametros/usuario-editar/{{ usuario.identificacion}}" class="btn orange">Editar Usuario</a>&nbsp;
+        <a routerLink="/parametros/usuario-eliminar/{{ usuario.identificacion }}" class="btn red">Eliminar Usuario</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>

@@ -1,0 +1,39 @@
+.btn-orange, .btn-red {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+   }
+   
+   .btn-orange:hover, .btn-red:hover {
+    background-color: darkorange;
+    color: black;
+   }
+
+   .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   }
+   
+   .styled-table thead tr {
+    background-color: #58585D;
+    color: #ffffff;
+    text-align: middle;
+   }
+   
+   .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+   }
+   
+   .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+   }
+   
+   .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+   }

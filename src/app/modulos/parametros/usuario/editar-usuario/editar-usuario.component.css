@@ -1,0 +1,32 @@
+#formulario-editar {
+    margin-top: 20px;
+    width: 600px;
+    height: 630px;
+ }
+
+
+ 
+#formulario-registro {
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+ }
+
+label{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+ 
+ .input-field input, .input-field select {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+   }
+   
+   .input-field input:focus, .input-field select:focus {
+    border-color: #3f51b5;
+   }
+   
+   

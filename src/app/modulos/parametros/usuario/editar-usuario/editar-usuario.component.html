@@ -1,0 +1,49 @@
+<div id="formulario-editar" class="row">
+
+  <form [formGroup]="fGroup" class="col s12">
+    <div class="input-field col s12">
+      <input formControlName="identificacion" id="identificacion" type="text" class="validate">
+      <label for="identificacion">Identificación</label>
+    </div>
+    <div class="input-field col s6">
+      <input formControlName="nombres" id="nombres" type="text" class="validate">
+      <label for="nombres">Nombre Completo</label>
+    </div>
+    <div class="input-field col s6">
+      <input formControlName="apellidos" id="apellidos" type="text" class="validate">
+      <label for="apellidos">Apellidos</label>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <select formControlName="perfil" id="perfil">
+          <option value="" disabled selected>Seleccione su Perfil</option>
+          <option value="CLIENTE">CLIENTE</option>
+          <option value="ADMINISTRADOR">ADMINISTRADOR</option>
+          <option value="AUXILIAR">AUXILIAR</option>
+        </select>
+        <div class="show-errors" *ngIf="ObtenerFormGroup['perfil'].invalid && (ObtenerFormGroup['perfil'].dirty || ObtenerFormGroup['perfil'].touched)">
+          <strong *ngIf="ObtenerFormGroup['perfil'].errors">Este campo es obligatorio</strong>
+        </div>
+      </div>
+      <div class="input-field col s6">
+        <input formControlName="password" id="password" [type]="passwordFieldType" class="validate">
+        <label for="password">Contraseña
+          <span>
+            <i (click)="togglePasswordVisibility()" class="material-icons toggle-password">{{ passwordIcon }}</i>
+          </span>
+        </label>
+      </div>
+      
+    </div>
+    
+    <div class="row">
+      <div class="input-field col s12" >
+        <button (click)="actualizarUsuario()" class="btn waves-effect waves-light col s12" >Editar Usuario
+          <i class="material-icons right"></i>
+        </button>
+      </div>
+    </div>
+    
+  </form>
+</div>

@@ -1,0 +1,35 @@
+#formulario-registro {
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+ }
+
+label{
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+ 
+ .input-field input, .input-field select {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+   }
+   
+   .input-field input:focus, .input-field select:focus {
+    border-color: #3f51b5;
+   }
+   
+   .btn {
+    background-color: #3f51b5;
+    color: #ffffff;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+   }
+   
+   .btn:hover {
+    background-color: #303f9f;
+   }
