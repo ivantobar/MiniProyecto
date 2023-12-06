@@ -48,12 +48,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonathanArroyaveGonzalez/Crud-Angular.git"
+    "url": "git+https://github.com/ivantobar/MiniProyecto.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JonathanArroyaveGonzalez/Crud-Angular/issues"
+    "url": "https://github.com/ivantobar/MiniProyecto.git"
   },
-  "homepage": "https://github.com/JonathanArroyaveGonzalez/Crud-Angular.git#readme"
+  "homepage": "https://github.com/ivantobar/MiniProyecto.git"
 }
