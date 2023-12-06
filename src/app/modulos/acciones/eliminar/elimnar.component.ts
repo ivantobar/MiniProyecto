@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { UsuarioModel } from 'src/app/modelos/usuario.model';
-import { UsuarioService } from 'src/app/servicios/usuario.service';
 import M from 'materialize-css/dist/js/materialize';
+import { UsuarioService } from 'src/app/servicios/usuario.service';
+
 
 @Component({
-  selector: 'app-eliminar-usuario',
-  templateUrl: './eliminar-usuario.component.html',
-  styleUrls: ['./eliminar-usuario.component.css']
+  selector: 'app-elimnar',
+  templateUrl: './elimnar.component.html',
+  styleUrls: ['./elimnar.component.css']
 })
-export class EliminarUsuarioComponent implements OnInit {
+export class ElimnarComponent implements OnInit {
 
   fGroup: FormGroup;
   passwordFieldType: string = 'password';
@@ -81,7 +81,7 @@ export class EliminarUsuarioComponent implements OnInit {
         next: (respuesta) => {
           alert('Usuario Eliminado Correctamentamente.');
           
-          this.router.navigate(['/parametros/usuario-listar']);
+          this.router.navigate(['/acciones/usuario-listar']);
         },
         error: (err) => {
           alert('Se ha producido un error al eliminar el usuario.');
@@ -95,3 +95,4 @@ export class EliminarUsuarioComponent implements OnInit {
   }
 
 }
+

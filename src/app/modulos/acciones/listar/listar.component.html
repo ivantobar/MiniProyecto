@@ -1,5 +1,5 @@
 <br />
-<a routerLink="/parametros/usuario-agregar" class="btn">Agregar Usuario</a>
+<a routerLink="/acciones/usuario-agregar" class="btn">Agregar Usuario</a>
 <br />
 <table class="styled-table">
   <thead>
@@ -20,8 +20,8 @@
       <td>{{ usuario.perfil }}</td>
       <td>{{ usuario.password }}</td>
       <td>
-        <a routerLink="/parametros/usuario-editar/{{ usuario.identificacion}}" class="btn orange">Editar Usuario</a>&nbsp;
-        <a routerLink="/parametros/usuario-eliminar/{{ usuario.identificacion }}" class="btn red">Eliminar Usuario</a>
+        <a routerLink="/acciones/usuario-editar/{{ usuario.identificacion}}" class="btn blue">Editar Usuario</a>&nbsp;
+        <a routerLink="/acciones/usuario-eliminar/{{ usuario.identificacion }}" class="btn red">Eliminar Usuario</a>
       </td>
     </tr>
   </tbody>

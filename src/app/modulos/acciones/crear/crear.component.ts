@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import M from 'materialize-css/dist/js/materialize';
 import { UsuarioModel } from 'src/app/modelos/usuario.model';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
-import M from 'materialize-css/dist/js/materialize';
+
 
 @Component({
-  selector: 'app-crear-usuario',
-  templateUrl: './crear-usuario.component.html',
-  styleUrls: ['./crear-usuario.component.css']
+  selector: 'app-crear',
+  templateUrl: './crear.component.html',
+  styleUrls: ['./crear.component.css']
 })
-export class CrearUsuarioComponent implements OnInit {
+export class CrearComponent implements OnInit {
 
   fGroup: FormGroup;
   
@@ -83,5 +84,6 @@ export class CrearUsuarioComponent implements OnInit {
   }
 
 }
+
 
 

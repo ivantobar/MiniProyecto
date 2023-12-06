@@ -3,11 +3,11 @@ import { UsuarioModel } from 'src/app/modelos/usuario.model';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
 
 @Component({
-  selector: 'app-listar-usuario',
-  templateUrl: './listar-usuario.component.html',
-  styleUrls: ['./listar-usuario.component.css']
+  selector: 'app-listar',
+  templateUrl: './listar.component.html',
+  styleUrls: ['./listar.component.css']
 })
-export class ListarUsuarioComponent implements OnInit {
+export class ListarComponent implements OnInit {
 
   listaRegistros: UsuarioModel[]=[];
   constructor(private servicio: UsuarioService) { }

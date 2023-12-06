@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import M from 'materialize-css/dist/js/materialize';
 import { UsuarioModel } from 'src/app/modelos/usuario.model';
 import { UsuarioService } from 'src/app/servicios/usuario.service';
-import M from 'materialize-css/dist/js/materialize';
+
 
 @Component({
-  selector: 'app-editar-usuario',
-  templateUrl: './editar-usuario.component.html',
-  styleUrls: ['./editar-usuario.component.css']
+  selector: 'app-actualizar',
+  templateUrl: './actualizar.component.html',
+  styleUrls: ['./actualizar.component.css']
 })
-export class EditarUsuarioComponent implements OnInit {
+export class ActualizarComponent implements OnInit {
 
   fGroup: FormGroup;
   passwordFieldType: string = 'password';
@@ -88,7 +89,7 @@ export class EditarUsuarioComponent implements OnInit {
         next: (respuesta) => {
           alert('Usuario Actualizado Correctamentamente.');
           
-          this.router.navigate(['/parametros/usuario-listar']);
+          this.router.navigate(['/acciones/usuario-listar']);
         },
         error: (err) => {
           alert('Se ha producido un error en la  actualización el usuario.');
@@ -102,3 +103,4 @@ export class EditarUsuarioComponent implements OnInit {
   }
 
 }
+

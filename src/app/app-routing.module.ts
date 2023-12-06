@@ -1,25 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RutaNoEncontradaComponent } from './publico/errores/ruta-no-encontrada/ruta-no-encontrada.component';
-import { ParametrosModule } from './modulos/parametros/parametros.module';
+import { AccionesModule } from './modulos/acciones/acciones.module';
 
 const routes: Routes = [{
   path:"inicio",
-  component: ParametrosModule,
+  component: AccionesModule,
 },
 {
   path:"",
   pathMatch: "full", 
-  redirectTo: "parametros/usuario-listar"
+  redirectTo: "acciones/usuario-listar"
 },
 {
-  path:"parametros",
-  loadChildren: () => import("./modulos/parametros/parametros.module").then(m => m.ParametrosModule)
+  path:"acciones",
+  loadChildren: () => import("./modulos/acciones/acciones.module").then(m => m.AccionesModule)
 },
-{
-  path: "**", 
-  component: RutaNoEncontradaComponent
-}];
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
